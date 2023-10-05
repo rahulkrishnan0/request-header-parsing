@@ -1,6 +1,4 @@
-## HeadsUp
-
-HeadsUp is a minimal, fast, clean API for request header parsing
+## *req-header-parse*
 
 PS: built for freecodecamp backend challenge series
 
