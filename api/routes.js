@@ -20,4 +20,26 @@ router.get('/whoami', (req, res)=>{
     })
 })
 
+
+
+router.get('/whoami/ip', (req, res) => {
+
+    const ipaddrs = req.headers.host
+
+    res.json({
+        "ipaddress" : ipaddrs
+    })
+})
+
+router.get('/whoami/user_agent', (req, res) => {
+
+    const user_agent = req.headers['user-agent']
+
+    res.json({
+        "user agent" :user_agent
+    })
+})
+
+
+
 module.exports = router;
