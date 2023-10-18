@@ -42,4 +42,15 @@ router.get('/whoami/user_agent', (req, res) => {
 
 
 
+router.get('/whoami/custom', (req, res) => {
+
+    const request_header = req.params.query.header;
+    const reqHeader = req.heades[request_header];
+
+    res.json({
+        request_header: reqHeader,
+    })
+})
+
+
 module.exports = router;
